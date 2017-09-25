@@ -237,13 +237,26 @@ a:focus {
   width: 100%;
   padding: 50px 0;
   color: white;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+  background: url(../img/imagesection-bg.jpg) no-repeat center center scroll;
   background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  opacity: 0.5;
+  opacity: 0.8;
+}
+
+.imagespacer-section {
+  width: 100%;
+  padding: 50px 0;
+  color: white;
+  background: url(../img/imagesection-bg2.jpg) no-repeat center center scroll;
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  opacity: 0.8;
 }
 
 .download-section div{
