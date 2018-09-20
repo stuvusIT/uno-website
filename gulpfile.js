@@ -58,6 +58,9 @@ gulp.task('copy', function() {
     gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
         .pipe(gulp.dest('vendor/jquery'))
 
+    gulp.src(['node_modules/jquery.easing/jquery.easing.js', 'node_modules/jquery.easing/jquery.easing.min.js'])
+        .pipe(gulp.dest('vendor/jquery.easing'))
+
     gulp.src([
             'node_modules/font-awesome/**',
             '!node_modules/font-awesome/**/*.map',
@@ -76,7 +79,7 @@ gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
 gulp.task('browserSync', function() {
     browserSync.init({
         server: {
-            baseDir: ''
+            baseDir: '.'
         },
     })
 })
